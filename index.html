@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cartino - Privacy Policy</title>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -27,13 +28,66 @@
             margin-bottom: 30px;
         }
 
+        .language-selector {
+            margin-bottom: 35px;
+            padding: 12px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .language-selector button {
+            margin-right: 8px;
+            padding: 8px 14px;
+            border: 1px solid #ccc;
+            background: #f5f5f5;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .language-selector button:hover {
+            background: #e9e9e9;
+        }
+
+        .language {
+            display: none;
+        }
+
+        .language.active {
+            display: block;
+        }
+
         a {
             color: inherit;
         }
     </style>
+
+    <script>
+        function showLanguage(language) {
+            document.querySelectorAll('.language').forEach(function(section) {
+                section.classList.remove('active');
+            });
+
+            document.getElementById(language).classList.add('active');
+
+            document.documentElement.lang = language;
+        }
+    </script>
 </head>
 
 <body>
+
+<div class="language-selector">
+    <strong>Language:</strong>
+    <button onclick="showLanguage('en')">English</button>
+    <button onclick="showLanguage('pl')">Polski</button>
+    <button onclick="showLanguage('de')">Deutsch</button>
+</div>
+
+
+<!-- ========================= -->
+<!-- ENGLISH -->
+<!-- ========================= -->
+
+<div id="en" class="language active">
 
 <h1>Cartino Privacy Policy</h1>
 
@@ -139,6 +193,242 @@
         cartino.contact@gmail.com
     </a>
 </p>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- POLSKI -->
+<!-- ========================= -->
+
+<div id="pl" class="language">
+
+<h1>Polityka prywatności Cartino</h1>
+
+<p class="updated">Ostatnia aktualizacja: 14 sierpnia 2026 r.</p>
+
+<p>
+    Software Center („my”, „nas” lub „nasz”) jest twórcą i operatorem
+    aplikacji mobilnej Cartino („Cartino” lub „Aplikacja”).
+</p>
+
+<p>
+    Niniejsza Polityka prywatności wyjaśnia, w jaki sposób aplikacja
+    Cartino przetwarza informacje podczas korzystania z Aplikacji.
+</p>
+
+<h2>1. Informacje, które zbieramy</h2>
+
+<p>
+    Cartino nie zbiera, nie przesyła ani nie przechowuje danych osobowych
+    na naszych serwerach.
+</p>
+
+<p>
+    Aplikacja nie wymaga tworzenia konta ani podawania danych osobowych,
+    takich jak imię i nazwisko, adres e-mail, numer telefonu czy adres
+    fizyczny.
+</p>
+
+<h2>2. Lokalne przechowywanie danych</h2>
+
+<p>
+    Cartino umożliwia tworzenie i zarządzanie listami zakupów. Informacje
+    wprowadzone przez użytkownika są przechowywane lokalnie na jego
+    urządzeniu.
+</p>
+
+<p>
+    Informacje te nie są przesyłane ani przechowywane na serwerach
+    obsługiwanych przez Software Center.
+</p>
+
+<h2>3. Udostępnianie danych</h2>
+
+<p>
+    Nie sprzedajemy, nie wynajmujemy ani nie udostępniamy danych osobowych
+    użytkowników podmiotom trzecim.
+</p>
+
+<h2>4. Reklamy i analityka</h2>
+
+<p>
+    Cartino nie zawiera reklam podmiotów trzecich i nie korzysta
+    z zewnętrznych usług analitycznych ani usług śledzenia użytkowników.
+</p>
+
+<h2>5. Zakupy</h2>
+
+<p>
+    Obecna wersja Cartino nie zawiera zakupów w aplikacji ani funkcji
+    subskrypcji.
+</p>
+
+<p>
+    Jeśli kupujesz Cartino za pośrednictwem Google Play, transakcja jest
+    przetwarzana przez Google Play zgodnie z warunkami korzystania
+    i polityką prywatności Google. Cartino nie otrzymuje ani nie
+    przechowuje informacji dotyczących płatności.
+</p>
+
+<h2>6. Usuwanie danych</h2>
+
+<p>
+    Ponieważ Cartino przechowuje dane list zakupów lokalnie na urządzeniu,
+    użytkownik może usunąć te dane za pomocą funkcji usuwania dostępnych
+    w Aplikacji lub poprzez usunięcie Aplikacji z urządzenia.
+</p>
+
+<h2>7. Prywatność dzieci</h2>
+
+<p>
+    Cartino nie zbiera świadomie danych osobowych dzieci ani innych
+    użytkowników.
+</p>
+
+<h2>8. Zmiany w Polityce prywatności</h2>
+
+<p>
+    Możemy od czasu do czasu aktualizować niniejszą Politykę prywatności,
+    na przykład w przypadku zmiany funkcjonalności Cartino. Każda
+    zaktualizowana wersja zostanie opublikowana na tej stronie wraz
+    z nową datą aktualizacji.
+</p>
+
+<h2>9. Kontakt</h2>
+
+<p>
+    W przypadku pytań dotyczących niniejszej Polityki prywatności lub
+    zasad ochrony prywatności w Cartino można skontaktować się z nami
+    pod adresem:
+</p>
+
+<p>
+    <strong>Software Center</strong><br>
+    E-mail:
+    <a href="mailto:cartino.contact@gmail.com">
+        cartino.contact@gmail.com
+    </a>
+</p>
+
+</div>
+
+
+<!-- ========================= -->
+<!-- DEUTSCH -->
+<!-- ========================= -->
+
+<div id="de" class="language">
+
+<h1>Datenschutzerklärung für Cartino</h1>
+
+<p class="updated">Letzte Aktualisierung: 14. August 2026</p>
+
+<p>
+    Software Center („wir“, „uns“ oder „unser“) entwickelt und betreibt
+    die mobile Anwendung Cartino („Cartino“ oder „App“).
+</p>
+
+<p>
+    Diese Datenschutzerklärung erläutert, wie Cartino mit Informationen
+    umgeht, wenn Sie die App verwenden.
+</p>
+
+<h2>1. Von uns erhobene Informationen</h2>
+
+<p>
+    Cartino erhebt, überträgt oder speichert keine personenbezogenen Daten
+    auf unseren Servern.
+</p>
+
+<p>
+    Für die Nutzung der App ist kein Benutzerkonto erforderlich. Die App
+    verlangt keine personenbezogenen Daten wie Name, E-Mail-Adresse,
+    Telefonnummer oder Anschrift.
+</p>
+
+<h2>2. Lokale Speicherung von Daten</h2>
+
+<p>
+    Cartino ermöglicht das Erstellen und Verwalten von Einkaufslisten.
+    Die vom Benutzer eingegebenen Informationen werden lokal auf dem
+    Gerät des Benutzers gespeichert.
+</p>
+
+<p>
+    Diese Informationen werden nicht an von Software Center betriebene
+    Server übertragen oder dort gespeichert.
+</p>
+
+<h2>3. Weitergabe von Daten</h2>
+
+<p>
+    Wir verkaufen, vermieten oder geben keine personenbezogenen Daten
+    der Benutzer an Dritte weiter.
+</p>
+
+<h2>4. Werbung und Analyse</h2>
+
+<p>
+    Cartino enthält keine Werbung von Drittanbietern und verwendet keine
+    externen Analyse- oder Tracking-Dienste.
+</p>
+
+<h2>5. Käufe</h2>
+
+<p>
+    Die aktuelle Version von Cartino enthält keine In-App-Käufe und keine
+    Abonnementfunktionen.
+</p>
+
+<p>
+    Wenn Sie Cartino über Google Play kaufen, wird die Transaktion von
+    Google Play gemäß den eigenen Nutzungsbedingungen und
+    Datenschutzbestimmungen von Google verarbeitet. Cartino erhält oder
+    speichert keine Zahlungsinformationen.
+</p>
+
+<h2>6. Löschung von Daten</h2>
+
+<p>
+    Da Cartino die Daten der Einkaufslisten lokal auf Ihrem Gerät
+    speichert, können Sie diese Daten mithilfe der entsprechenden
+    Löschfunktionen innerhalb der App oder durch Löschen der App von
+    Ihrem Gerät entfernen.
+</p>
+
+<h2>7. Datenschutz für Kinder</h2>
+
+<p>
+    Cartino erhebt wissentlich keine personenbezogenen Daten von Kindern
+    oder anderen Benutzern.
+</p>
+
+<h2>8. Änderungen dieser Datenschutzerklärung</h2>
+
+<p>
+    Wir können diese Datenschutzerklärung von Zeit zu Zeit aktualisieren,
+    beispielsweise wenn sich die Funktionen von Cartino ändern. Jede
+    aktualisierte Version wird auf dieser Seite mit einem neuen
+    Aktualisierungsdatum veröffentlicht.
+</p>
+
+<h2>9. Kontakt</h2>
+
+<p>
+    Wenn Sie Fragen zu dieser Datenschutzerklärung oder zum Datenschutz
+    bei Cartino haben, können Sie uns unter folgender Adresse kontaktieren:
+</p>
+
+<p>
+    <strong>Software Center</strong><br>
+    E-Mail:
+    <a href="mailto:cartino.contact@gmail.com">
+        cartino.contact@gmail.com
+    </a>
+</p>
+
+</div>
 
 </body>
 </html>
